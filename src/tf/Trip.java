@@ -1,6 +1,6 @@
 package tf;
 
-public class Trip {
+public abstract class Trip {
     private MyDate start;
     private MyDate end;
     private String destination;

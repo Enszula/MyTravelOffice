@@ -26,13 +26,16 @@ public class Test {
         Customer customer2 = new Customer("Miroslaw");
         customer2.setAddress(new Address("Wiejska", "11-111", "Warszawa"));
 
+        travelOffice.addTrip("Java academy", trip);
+        travelOffice.addTrip("london tirp", trip1);
+
         travelOffice.addCustomer(customer);
         travelOffice.addCustomer(customer2);
         travelOffice.addCustomer(customer1);
 
 
-        System.out.println(travelOffice);
-        System.out.println(travelOffice.getCustomerCount());
+        System.out.println(travelOffice.getCustomers());
+        System.out.println(travelOffice.getTrips());
     }
 
 }

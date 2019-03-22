@@ -1,33 +1,13 @@
 package tf;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class TravelOffice {
-    Customer[] customers = new Customer[2];
+    Set<Customer> customers = new HashSet<>();
+    Map<String, Trip> trips = new HashMap<>();
 
     public void addCustomer(Customer customer) {
-        int index = this.getCustomerCount();
-        if (customers.length <= this.getCustomerCount() ) {
-            Customer[] tempCustomerArray = new Customer[customers.length * 2];
-            System.arraycopy(customers, 0, tempCustomerArray, 0, customers.length);
-            customers = tempCustomerArray;
-        }
-            customers[index++] = customer;
-    }
-
-    @Override
-    public String toString() {
-        List<Customer> customerList = new ArrayList<>(Arrays.asList(customers));
-        String s = "";
-        for (Customer c: customers)
-            if (c instanceof Customer)
-                s += c + "\n";
-
-        return "TravelOffice{" +
-                "customers=\n" + s +
-                '}';
+        customers.add(customer);
     }
 
     public int getCustomerCount() {
@@ -38,6 +18,59 @@ public class TravelOffice {
 
         return customerCount;
     }
+
+    public void addTrip(String tripName, Trip trip) {
+        trips.put(tripName, trip);
+    }
+
+    public boolean removeTrip(String tripName) {
+        if (trips.containsKey(tripName)) {
+            trips.remove(tripName);
+            return true;
+        }
+        else
+            System.out.println("Wycieczka o nazwie" + tripName + " nie istnieje!");
+
+        return false;
+    }
+
+    public Customer findCustomerByName(String customerName) {
+        List<Customer> list = new ArrayList<>(customers);
+        for (Customer c: customers) {
+            if (c.toString() == customerName)
+                return c;
+        }
+
+        return null;
+    }
+
+    public boolean removeCustomer(Customer customer) {
+        if (customer == null)
+            return false;
+
+        return customers.remove(customer);
+    }
+
+    public Set<Customer> getCustomers() {
+        return customers;
+    }
+
+    public Map<String, Trip> getTrips() {
+        return trips;
+    }
+
+    @Override
+    public String toString() {
+        String s = "";
+        for (Customer c: customers)
+            if (c instanceof Customer)
+                s += c + "\n";
+
+        return "TravelOffice{" +
+                "customers=\n" + s +
+                '}';
+    }
+
 
 /*
     public static void main(String[] args) {
