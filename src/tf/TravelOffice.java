@@ -39,6 +39,7 @@ public class TravelOffice {
         return customerCount;
     }
 
+/*
     public static void main(String[] args) {
         TravelOffice travelOffice = new TravelOffice();
 
@@ -68,4 +69,5 @@ public class TravelOffice {
         System.out.println(travelOffice);
         System.out.println(travelOffice.getCustomerCount());
     }
+*/
 }
