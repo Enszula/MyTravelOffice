@@ -37,5 +37,4 @@ public class Test {
         System.out.println(travelOffice.getCustomers());
         System.out.println(travelOffice.getTrips());
     }
-
 }
