@@ -1,4 +1,4 @@
-package tf;
+package TravelOffice.tf;
 
 public class MyDate {
     private int year;
@@ -9,6 +9,14 @@ public class MyDate {
         this.year = year;
         this.month = month;
         this.day = day;
+    }
+
+    public static MyDate of(String dateString, String separator) {
+        String[] array = dateString.split("-");
+        if (array.length != 3) {
+            return null;
+        }
+        return new MyDate(Integer.valueOf(array[0]), Integer.valueOf(array[1]), Integer.valueOf(2));
     }
 
     @Override

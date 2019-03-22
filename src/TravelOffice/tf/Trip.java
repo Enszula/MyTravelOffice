@@ -1,4 +1,4 @@
-package tf;
+package TravelOffice.tf;
 
 public abstract class Trip {
     private MyDate start;

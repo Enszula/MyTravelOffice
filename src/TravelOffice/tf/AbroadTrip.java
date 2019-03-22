@@ -1,4 +1,4 @@
-package tf;
+package TravelOffice.tf;
 
 public class AbroadTrip extends Trip {
     private Double insurance;

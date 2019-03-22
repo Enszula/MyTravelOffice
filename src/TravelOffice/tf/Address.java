@@ -1,4 +1,4 @@
-package tf;
+package TravelOffice.tf;
 
 public class Address {
     private String street;
