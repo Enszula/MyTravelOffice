@@ -17,6 +17,10 @@ public class Customer {
         this.trip = trip;
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public String toString() {
         return "Customer{" +

@@ -83,18 +83,23 @@ public class MainHandler implements UserInterface {
         System.out.print("Imie klienta? ");
         String name = scanner.next();
 
-        Customer customer = travelOffice.findCustomerByName(name);
-        if (customer == null) {
-            System.out.println("Nie ma klienta o imieniu '" + name + "'\n");
-            return;
+        Customer customer = null;
+        try {
+            customer = travelOffice.findCustomerByName(name);
+        } catch (NoSuchCustomerException e) {
+            e.printStackTrace();
         }
+//        if (customer == null) {
+//            System.out.println("Nie ma klienta o imieniu '" + name + "'\n");
+//            return;
+//        }
 
         System.out.print("Nazwa wycieczki? ");
-        String id = scanner.next();
+        String tripName = scanner.next();
 
-        Trip trip = travelOffice.getTrips().get(id);
+        Trip trip = travelOffice.getTrips().get(tripName);
         if (trip == null) {
-            System.out.println("Nie ma wycieczki o nazwie '" + id + "'\n");
+            System.out.println("Nie ma wycieczki o nazwie '" + tripName + "'\n");
             return;
         }
         customer.assignTrip(trip);
@@ -105,12 +110,14 @@ public class MainHandler implements UserInterface {
         System.out.print("Imie klienta do usuniecia? ");
         String customerName = scanner.next();
 
-        Customer c = travelOffice.findCustomerByName(customerName);
-        if (c == null) {
-            System.out.println("Nie znaleziono takiego klienta\n");
+        Customer customer;
+        try {
+            customer = travelOffice.findCustomerByName(customerName);
+            travelOffice.removeCustomer(customer);
+        } catch (NoSuchCustomerException ex) {
+            ex.printStackTrace();
             return false;
         }
-        travelOffice.removeCustomer(c);
 
         System.out.println("Klient usuniety...\n");
         return true;
@@ -120,7 +127,12 @@ public class MainHandler implements UserInterface {
     public boolean removeTrip() {
         System.out.print("Nazwa wycieczki do usuniecia? ");
         String id = scanner.next();
-        boolean success = travelOffice.removeTrip(id);
+        boolean success = false;
+        try {
+            success = travelOffice.removeTrip(id);
+        } catch (NoSuchTripException e) {
+            e.printStackTrace();
+        }
         if (!success) {
             System.out.println("Nie znaleziono wycieczki\n");
             return false;

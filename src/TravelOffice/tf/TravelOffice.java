@@ -23,53 +23,52 @@ public class TravelOffice {
         trips.put(tripName, trip);
     }
 
-    public boolean removeTrip(String tripName) {
+    public boolean removeTrip(String tripName) throws NoSuchTripException {
         if (trips.containsKey(tripName)) {
             trips.remove(tripName);
             return true;
+        } else
+            throw new NoSuchTripException("Nie ma takiej wycieczki!");
+
+    }
+
+        public Customer findCustomerByName (String customerName) throws NoSuchCustomerException {
+            for (Customer c : customers) {
+                if (c.getName().startsWith(customerName))
+                    return c;
+                else
+                    throw new NoSuchCustomerException("Nie ma takiego klienta!");
+            }
+
+            return null;
         }
-        else
-            System.out.println("Wycieczka o nazwie" + tripName + " nie istnieje!");
 
-        return false;
-    }
+        public boolean removeCustomer (Customer customer) throws NoSuchCustomerException {
+            if (customer == null)
+                throw new NoSuchCustomerException("Nie ma takiego klienta do usuniecia!");
 
-    public Customer findCustomerByName(String customerName) {
-        List<Customer> list = new ArrayList<>(customers);
-        for (Customer c: customers) {
-            if (c.toString() == customerName)
-                return c;
+            return customers.remove(customer);
         }
 
-        return null;
-    }
+        public Set<Customer> getCustomers () {
+            return customers;
+        }
 
-    public boolean removeCustomer(Customer customer) {
-        if (customer == null)
-            return false;
+        public Map<String, Trip> getTrips () {
+            return trips;
+        }
 
-        return customers.remove(customer);
-    }
+        @Override
+        public String toString () {
+            String s = "";
+            for (Customer c : customers)
+                if (c instanceof Customer)
+                    s += c + "\n";
 
-    public Set<Customer> getCustomers() {
-        return customers;
-    }
-
-    public Map<String, Trip> getTrips() {
-        return trips;
-    }
-
-    @Override
-    public String toString() {
-        String s = "";
-        for (Customer c: customers)
-            if (c instanceof Customer)
-                s += c + "\n";
-
-        return "TravelOffice{" +
-                "customers=\n" + s +
-                '}';
-    }
+            return "TravelOffice{" +
+                    "customers=\n" + s +
+                    '}';
+        }
 
 
 /*
@@ -103,4 +102,4 @@ public class TravelOffice {
         System.out.println(travelOffice.getCustomerCount());
     }
 */
-}
+    }
