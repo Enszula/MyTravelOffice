@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MyTravelOffice:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MyTravelOffice_jar</output-path>
+    <root id="archive" name="MyTravelOffice.jar">
+      <element id="module-output" name="MyTravelOffice" />
+    </root>
+  </artifact>
+</component>
