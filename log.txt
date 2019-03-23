@@ -1,0 +1,4 @@
+Mar 23, 2019 7:07:48 PM TravelOffice.tf.MainHandler addCustomer
+INFO: Create new customer
+Mar 23, 2019 7:07:53 PM TravelOffice.tf.MainHandler removeCustomer
+INFO: Customer deletion

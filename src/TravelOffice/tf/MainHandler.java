@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 public class MainHandler implements UserInterface {
     private static Logger logger = Logger.getLogger("to.TravelOffice");
     private TravelOffice travelOffice;
-    private Scanner scanner = null;
+    private Scanner scanner;
 
     public MainHandler(TravelOffice travelOffice) {
         this.travelOffice = travelOffice;
@@ -118,13 +118,22 @@ public class MainHandler implements UserInterface {
     public boolean removeCustomer() {
         System.out.print("Imie klienta do usuniecia? ");
         String customerName = scanner.next();
+        try {
+            boolean isCustomerDeleted = travelOffice.getCustomers().removeIf(customer1 -> customer1.getName().startsWith(customerName));
+            if (isCustomerDeleted) {
+                System.out.println("Klient usuniety...\n");
+                logger.info("Customer deletion");
+            } else {
+                throw new NoSuchCustomerException("Nie ma takiego klienta");
+            }
+        }
+        catch (NoSuchTripException | NullPointerException e) {
+            System.err.print(e);
+        }
 
-        Customer customer;
-        travelOffice.getCustomers().removeIf(customer1 -> customer1.getName().equals(customerName));
 
-        System.out.println("Klient usuniety...\n");
-        logger.info("Customer deletion");
-        return true;
+        return isCustomerDeleted;
+
     }
 
     @Override

@@ -1,9 +1,33 @@
 package TravelOffice.tf;
 
+import sun.rmi.runtime.Log;
+
+import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.logging.*;
 
 public class TestMainHandler {
+
+    private static void loggerSetup() {
+        Logger root = Logger.getLogger("");
+        Arrays.asList(root.getHandlers()).forEach(h -> root.removeHandler(h));
+
+        Logger logger = Logger.getLogger("to.TravelOffice");
+        try {
+            Handler handler = new FileHandler("log.txt"); //
+            handler.setFormatter(new SimpleFormatter());
+            logger.addHandler(handler);
+            logger.setLevel(Level.INFO);
+        }
+        catch (SecurityException | IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] args) {
+        loggerSetup();
+
         // utworz biuro podrozy
         TravelOffice travelOffice = new TravelOffice();
         MainHandler mainHandler = new MainHandler(travelOffice);
