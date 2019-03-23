@@ -1,12 +1,14 @@
 package TravelOffice.tf;
 
+import java.time.LocalDate;
+
 public abstract class Trip {
-    private MyDate start;
-    private MyDate end;
+    private LocalDate start;
+    private LocalDate end;
     private String destination;
     private Double price;
 
-    public Trip(MyDate start, MyDate end, String destination) {
+    public Trip(LocalDate start, LocalDate end, String destination) {
         this.start = start;
         this.end = end;
         this.destination = destination;

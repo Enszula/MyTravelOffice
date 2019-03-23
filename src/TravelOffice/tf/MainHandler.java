@@ -1,5 +1,7 @@
 package TravelOffice.tf;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -42,11 +44,12 @@ public class MainHandler implements UserInterface {
 
         System.out.print("Data rozpoczecia wycieczki (dd-MM-yy) ");
         String start = scanner.next();
-        MyDate startDate = MyDate.of(start, "-");
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        LocalDate startDate = LocalDate.parse(start, dateTimeFormatter);
 
         System.out.print("Data zakonczenia wycieczki (dd-MM-yy) ");
         String end = scanner.next();
-        MyDate endDate = MyDate.of(end, "-");
+        LocalDate endDate = LocalDate.parse(end, dateTimeFormatter);
 
         System.out.print("Cena wycieczki? ");
         double price = scanner.nextInt();

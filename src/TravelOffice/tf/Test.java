@@ -1,5 +1,7 @@
 package TravelOffice.tf;
 
+import java.time.LocalDate;
+
 public class Test {
     public static void main(String[] args) {
         TravelOffice travelOffice = new TravelOffice();
@@ -7,8 +9,8 @@ public class Test {
         Address address = new Address("Opolska 22", "40-084", "Katowice");
         Customer customer = new Customer("Jan Kowalski");
         customer.setAddress(address);
-        Trip trip = new DomesticTrip(new MyDate(2019, 03, 18),
-                new MyDate(2019, 03, 29),
+        Trip trip = new DomesticTrip(LocalDate.of(2019, 03, 18),
+                LocalDate.of(2019, 03, 29),
                 "Katowice");
         trip.setPrice(8000.0);
         ((DomesticTrip) trip).setOwnArrivalDiscount(1000.0);
@@ -16,8 +18,8 @@ public class Test {
 
         Customer customer1 = new Customer("Marek Nowak");
         customer1.setAddress(new Address("Niedurnego 2a/7", "40-384", "Katowice"));
-        Trip trip1 = new AbroadTrip(new MyDate(2019, 04, 16),
-                new MyDate(2019, 06, 31),
+        Trip trip1 = new AbroadTrip(LocalDate.of(2019, 04, 16),
+                LocalDate.of(2019, 06, 28),
                 "London");
         trip1.setPrice(4000.0);
         ((AbroadTrip) trip1).setInsurance(500.0);

@@ -1,9 +1,11 @@
 package TravelOffice.tf;
 
+import java.time.LocalDate;
+
 public class DomesticTrip extends Trip {
     private Double ownArrivalDiscount;
 
-    public DomesticTrip(MyDate start, MyDate end, String destination) {
+    public DomesticTrip(LocalDate start, LocalDate end, String destination) {
         super(start, end, destination);
     }
 

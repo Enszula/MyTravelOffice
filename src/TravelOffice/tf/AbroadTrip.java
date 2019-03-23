@@ -1,9 +1,11 @@
 package TravelOffice.tf;
 
+import java.time.LocalDate;
+
 public class AbroadTrip extends Trip {
     private Double insurance;
 
-    public AbroadTrip(MyDate start, MyDate end, String destination) {
+    public AbroadTrip(LocalDate start, LocalDate end, String destination) {
         super(start, end, destination);
     }
 
