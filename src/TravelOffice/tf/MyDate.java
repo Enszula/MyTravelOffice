@@ -16,7 +16,7 @@ public class MyDate {
         if (array.length != 3) {
             return null;
         }
-        return new MyDate(Integer.valueOf(array[0]), Integer.valueOf(array[1]), Integer.valueOf(2));
+        return new MyDate(Integer.valueOf(array[2]), Integer.valueOf(array[1]), Integer.valueOf(0));
     }
 
     @Override

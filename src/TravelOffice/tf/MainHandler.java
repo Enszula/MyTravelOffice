@@ -40,11 +40,11 @@ public class MainHandler implements UserInterface {
         System.out.print("Miasto wycieczki ");
         String destination = scanner.next();
 
-        System.out.print("Data rozpoczecia wycieczki (dd-MM-yy)");
+        System.out.print("Data rozpoczecia wycieczki (dd-MM-yy) ");
         String start = scanner.next();
         MyDate startDate = MyDate.of(start, "-");
 
-        System.out.print("Data zakonczenia wycieczki (dd-MM-yy)");
+        System.out.print("Data zakonczenia wycieczki (dd-MM-yy) ");
         String end = scanner.next();
         MyDate endDate = MyDate.of(end, "-");
 
@@ -55,7 +55,7 @@ public class MainHandler implements UserInterface {
         String tripType = scanner.next();
 
         Trip trip = null;
-        if (tripType.equals("zagraniczna") ) {
+        if (tripType.startsWith("z") ) {
             System.out.print("Ubezpieczenie wycieczki? ");
             double insurance = scanner.nextDouble();
 
@@ -111,13 +111,7 @@ public class MainHandler implements UserInterface {
         String customerName = scanner.next();
 
         Customer customer;
-        try {
-            customer = travelOffice.findCustomerByName(customerName);
-            travelOffice.removeCustomer(customer);
-        } catch (NoSuchCustomerException ex) {
-            ex.printStackTrace();
-            return false;
-        }
+        travelOffice.getCustomers().removeIf(customer1 -> customer1.getName().equals(customerName));
 
         System.out.println("Klient usuniety...\n");
         return true;
@@ -133,10 +127,7 @@ public class MainHandler implements UserInterface {
         } catch (NoSuchTripException e) {
             e.printStackTrace();
         }
-        if (!success) {
-            System.out.println("Nie znaleziono wycieczki\n");
-            return false;
-        }
+
         System.out.println("Wycieczka zostala usunieta...\n");
         return true;
     }
@@ -144,16 +135,18 @@ public class MainHandler implements UserInterface {
     @Override
     public void showTrips() {
         System.out.println("Lista wycieczek:");
-        for (Map.Entry<String, Trip> entry : travelOffice.getTrips().entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
+        travelOffice.getTrips().forEach((s, trip) -> System.out.println(s + " " + trip));
+
+//        for (Map.Entry<String, Trip> entry : travelOffice.getTrips().entrySet()) {
+//            System.out.println(entry.getKey() + ": " + entry.getValue());
+//        }
         System.out.println();
     }
 
     @Override
     public void showCustomers() {
         System.out.println("Lista klientow:");
-        System.out.println(travelOffice);
+        travelOffice.getCustomers().forEach(customer -> System.out.println(customer));
     }
 
 }
