@@ -4,8 +4,10 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class MainHandler implements UserInterface {
+    private static Logger logger = Logger.getLogger("to.TravelOffice");
     private TravelOffice travelOffice;
     private Scanner scanner = null;
 
@@ -30,7 +32,9 @@ public class MainHandler implements UserInterface {
         Customer customer = new Customer(customerName);
         customer.setAddress(address);
         travelOffice.addCustomer(customer);
+        System.out.println("Utworzono nowego klienta!");
 
+        logger.info("Create new customer");
         return customer;
     }
 
@@ -78,6 +82,7 @@ public class MainHandler implements UserInterface {
         }
 
         System.out.println("Dodano nowa wycieczke...\n");
+        logger.info("Dodano nowa wycieczke.");
         return trip;
     }
 
@@ -91,6 +96,7 @@ public class MainHandler implements UserInterface {
             customer = travelOffice.findCustomerByName(name);
         } catch (NoSuchCustomerException e) {
             e.printStackTrace();
+            logger.warning("NoSuchCustomerException thrown");
         }
 //        if (customer == null) {
 //            System.out.println("Nie ma klienta o imieniu '" + name + "'\n");
@@ -117,6 +123,7 @@ public class MainHandler implements UserInterface {
         travelOffice.getCustomers().removeIf(customer1 -> customer1.getName().equals(customerName));
 
         System.out.println("Klient usuniety...\n");
+        logger.info("Customer deletion");
         return true;
     }
 
@@ -129,6 +136,7 @@ public class MainHandler implements UserInterface {
             success = travelOffice.removeTrip(id);
         } catch (NoSuchTripException e) {
             e.printStackTrace();
+            logger.warning("NoSuchTripException thrown");
         }
 
         System.out.println("Wycieczka zostala usunieta...\n");
