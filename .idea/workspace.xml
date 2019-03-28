@@ -6,29 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="260b4dfa-8bbe-4029-8ed8-4e4cc5840f4c" name="Default Changelist" comment="Add TravelOfficeService, refactor&#10;&#10;Add TravelOfficeService&#10;Add controller, entity, exception, service packages&#10;Refactor classes">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="260b4dfa-8bbe-4029-8ed8-4e4cc5840f4c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TravelOffice/service/TravelOfficeServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyTravelOffice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyTravelOffice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/controller/MainHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/entity/AbroadTrip.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/entity/Address.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/entity/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/entity/DomesticTrip.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/entity/MyDate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/entity/TravelOffice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/entity/Trip.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/exception/NoSuchCustomerException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/exception/NoSuchTripException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/service/TravelOfficeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/tf/MainHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/tf/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/tf/TestDate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/tf/TestMainHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TravelOffice/tf/UserInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,9 +26,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/service/TravelOfficeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+            <state relative-caret-position="256">
+              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#454#455#0" expanded="true" />
                 <element signature="e#511#512#0" expanded="true" />
               </folding>
@@ -53,41 +37,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/entity/TravelOffice.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TravelOffice/service/TravelOfficeServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/controller/MainHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="157" column="5" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/tf/TestMainHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+            <state relative-caret-position="301">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -99,6 +56,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -137,6 +95,7 @@
         <option value="$PROJECT_DIR$/src/TravelOffice/entity/Address.java" />
         <option value="$PROJECT_DIR$/src/TravelOffice/entity/DomesticTrip.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/TravelOffice/service/TravelOfficeServiceTest.java" />
       </list>
     </option>
   </component>
@@ -175,7 +134,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Tests'; set:Tests; class com.intellij.psi.search.scope.TestsScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -239,11 +198,61 @@
               <item name="TravelOffice" type="462c0819:PsiDirectoryNode" />
               <item name="tf" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MyTravelOffice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyTravelOffice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope">
+        <subPane subId="Scope 'Tests'; set:Tests; class com.intellij.psi.search.scope.TestsScope">
+          <expand>
+            <path>
+              <item name="MyTravelOffice" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="MyTravelOffice" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="MyTravelOffice" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="MyTravelOffice" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyTravelOffice" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="MyTravelOffice" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyTravelOffice" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="MyTravelOffice" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyTravelOffice" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="MyTravelOffice" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="TravelOffice" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="MyTravelOffice" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="MyTravelOffice" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="TravelOffice" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="service" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
         <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
           <expand>
             <path>
@@ -306,7 +315,9 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553804497426" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553807138301" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -314,6 +325,12 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="TravelOffice.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="TravelOffice.service" />
       <recent name="TravelOffice.controller" />
@@ -331,51 +348,93 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestMainHandler">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TravelOffice.tf.Test" />
+  <component name="RunManager" selected="JUnit.TravelOfficeServiceTest">
+    <configuration name="TravelOfficeServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyTravelOffice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TravelOffice.exception.*" />
+          <option name="PATTERN" value="TravelOffice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="TravelOffice.service" />
+      <option name="MAIN_CLASS_NAME" value="TravelOffice.service.TravelOfficeServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMainHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TravelOffice.tf.TestMainHandler" />
+    <configuration name="TravelOfficeServiceTest.addTrip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyTravelOffice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TravelOffice.exception.*" />
+          <option name="PATTERN" value="TravelOffice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="TravelOffice.service" />
+      <option name="MAIN_CLASS_NAME" value="TravelOffice.service.TravelOfficeServiceTest" />
+      <option name="METHOD_NAME" value="addTrip" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TravelOffice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TravelOffice.entity.TravelOffice" />
+    <configuration name="TravelOfficeServiceTest.getCustomerCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyTravelOffice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TravelOffice.exception.*" />
+          <option name="PATTERN" value="TravelOffice.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="TravelOffice.service" />
+      <option name="MAIN_CLASS_NAME" value="TravelOffice.service.TravelOfficeServiceTest" />
+      <option name="METHOD_NAME" value="getCustomerCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TravelOfficeServiceTest.removeCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyTravelOffice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TravelOffice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TravelOffice.service" />
+      <option name="MAIN_CLASS_NAME" value="TravelOffice.service.TravelOfficeServiceTest" />
+      <option name="METHOD_NAME" value="removeCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TravelOfficeServiceTest.removeTrip" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyTravelOffice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TravelOffice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TravelOffice.service" />
+      <option name="MAIN_CLASS_NAME" value="TravelOffice.service.TravelOfficeServiceTest" />
+      <option name="METHOD_NAME" value="removeTrip" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestMainHandler" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.TravelOffice" />
+        <item itemvalue="JUnit.TravelOfficeServiceTest" />
+        <item itemvalue="JUnit.TravelOfficeServiceTest.removeCustomer" />
+        <item itemvalue="JUnit.TravelOfficeServiceTest.removeTrip" />
+        <item itemvalue="JUnit.TravelOfficeServiceTest.addTrip" />
+        <item itemvalue="JUnit.TravelOfficeServiceTest.getCustomerCount" />
       </list>
     </recent_temporary>
   </component>
@@ -394,18 +453,65 @@
       <workItem from="1553350567224" duration="9625000" />
       <workItem from="1553801951831" duration="931000" />
       <workItem from="1553802892906" duration="254000" />
-      <workItem from="1553804211675" duration="263000" />
+      <workItem from="1553804211675" duration="2874000" />
     </task>
+    <task id="LOCAL-00001" summary="Add Maven">
+      <created>1553804483691</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553804483691</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add Maven">
+      <created>1553804514167</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1553804514167</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TravelOfficeServiceTest_addCustomer - 2019.03.28 at 21h 38m 19s.xml">
+      <configuration name="TravelOfficeServiceTest.addCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TravelOfficeServiceTest_getCustomerCount - 2019.03.28 at 21h 43m 06s.xml">
+      <configuration name="TravelOfficeServiceTest.getCustomerCount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TravelOfficeServiceTest_addTrip - 2019.03.28 at 21h 50m 49s.xml">
+      <configuration name="TravelOfficeServiceTest.addTrip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TravelOfficeServiceTest - 2019.03.28 at 21h 51m 38s.xml">
+      <configuration name="TravelOfficeServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TravelOfficeServiceTest_removeTrip - 2019.03.28 at 21h 54m 58s.xml">
+      <configuration name="TravelOfficeServiceTest.removeTrip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TravelOfficeServiceTest_removeTrip - 2019.03.28 at 21h 55m 20s.xml">
+      <configuration name="TravelOfficeServiceTest.removeTrip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TravelOfficeServiceTest_removeTrip - 2019.03.28 at 21h 56m 55s.xml">
+      <configuration name="TravelOfficeServiceTest.removeTrip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TravelOfficeServiceTest_removeTrip - 2019.03.28 at 21h 57m 17s.xml">
+      <configuration name="TravelOfficeServiceTest.removeTrip" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TravelOfficeServiceTest_removeCustomer - 2019.03.28 at 22h 00m 31s.xml">
+      <configuration name="TravelOfficeServiceTest.removeCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TravelOfficeServiceTest_removeCustomer - 2019.03.28 at 22h 00m 55s.xml">
+      <configuration name="TravelOfficeServiceTest.removeCustomer" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16178000" />
+    <option name="totallyTimeSpent" value="18789000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26307365" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26307365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -415,15 +521,15 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32903227" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.3286638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.3286638" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50053364" side_tool="true" visible="true" weight="0.3286638" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286638" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -435,7 +541,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" x="0" y="0" width="190" height="853" id="Documentation" order="9" side_tool="true" weight="0.42083332" />
+      <window_info anchor="right" x="0" y="0" width="190" height="853" id="Documentation" order="9" side_tool="true" weight="0.42049092" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,7 +552,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Add TravelOfficeService, refactor&#10;&#10;Add TravelOfficeService&#10;Add controller, entity, exception, service packages&#10;Refactor classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add TravelOfficeService, refactor&#10;&#10;Add TravelOfficeService&#10;Add controller, entity, exception, service packages&#10;Refactor classes" />
+    <MESSAGE value="Add Maven" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Maven" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/tf/UserInterface.java">
@@ -460,13 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2899">
           <caret line="467" column="12" selection-start-line="467" selection-start-column="12" selection-end-line="467" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/tf/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -485,13 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/entity/Trip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -550,28 +643,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/service/TravelOfficeService.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding>
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/entity/TravelOffice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/controller/MainHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="157" column="5" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -585,10 +660,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/controller/MainHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state relative-caret-position="181">
+          <caret line="157" column="5" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/entity/TravelOffice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/tf/TestDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/tf/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/entity/Trip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TravelOffice/service/TravelOfficeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TravelOffice/service/TravelOfficeServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
