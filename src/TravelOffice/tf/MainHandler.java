@@ -1,8 +1,11 @@
 package TravelOffice.tf;
 
+import TravelOffice.entity.*;
+import TravelOffice.exception.NoSuchCustomerException;
+import TravelOffice.exception.NoSuchTripException;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Map;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
@@ -115,11 +118,13 @@ public class MainHandler implements UserInterface {
     }
 
     @Override
-    public boolean removeCustomer() {
+    public boolean removeCustomer()  {
         System.out.print("Imie klienta do usuniecia? ");
         String customerName = scanner.next();
+
+        boolean isCustomerDeleted = false;
         try {
-            boolean isCustomerDeleted = travelOffice.getCustomers().removeIf(customer1 -> customer1.getName().startsWith(customerName));
+            isCustomerDeleted = travelOffice.getCustomers().removeIf(customer1 -> customer1.getName().startsWith(customerName));
             if (isCustomerDeleted) {
                 System.out.println("Klient usuniety...\n");
                 logger.info("Customer deletion");
@@ -127,10 +132,9 @@ public class MainHandler implements UserInterface {
                 throw new NoSuchCustomerException("Nie ma takiego klienta");
             }
         }
-        catch (NoSuchTripException | NullPointerException e) {
+        catch (NullPointerException | NoSuchCustomerException e) {
             System.err.print(e);
         }
-
 
         return isCustomerDeleted;
 

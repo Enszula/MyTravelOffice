@@ -1,5 +1,7 @@
 package TravelOffice.tf;
 
+import TravelOffice.entity.MyDate;
+
 public class TestDate {
     public static void main(String[] args) {
         MyDate today = new MyDate(2019, 3, 18);

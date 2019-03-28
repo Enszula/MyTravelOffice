@@ -1,5 +1,7 @@
 package TravelOffice.tf;
 
+import TravelOffice.entity.*;
+
 import java.time.LocalDate;
 
 public class Test {

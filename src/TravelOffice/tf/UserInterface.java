@@ -1,5 +1,8 @@
 package TravelOffice.tf;
 
+import TravelOffice.entity.Customer;
+import TravelOffice.entity.Trip;
+
 public interface UserInterface {
         Customer addCustomer();
 
